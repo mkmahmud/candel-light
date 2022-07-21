@@ -1,0 +1,60 @@
+.main{
+    height: 400px;
+    width: 400px;
+    background: #03062a;
+    margin: auto;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 12px;
+}
+.candel-stand{
+    height: 10px;
+    width: 150px;
+    background: #02020a;
+    margin: auto;
+    margin-top: 250px;
+    border-radius: 10px;
+    position: relative;
+}
+.candel{
+    height: 100px;
+    width: 50px;
+    background: #efefef;
+    position: absolute;
+    top: -100px;
+    left: 50px;
+    border-right: 10px solid #d1d1d1;
+    border-radius: 5px;
+}
+.light{
+    height: 30px;
+    width: 15px;
+    background: radial-gradient(yellow, transparent);
+    position: absolute;
+    top: -35px;
+    left: 23px;
+    border-radius: 10px 10px 5px 5px;
+    box-shadow:0px 0px 40px 8px #ffff0082;
+    animation: light 0.5s infinite alternate;
+}
+
+.light:before {
+    position: absolute;
+    height: 10px;
+    width: 3px;
+    content: '';
+    background: radial-gradient(black, transparent);
+    bottom: -4px;
+    left: 44%;
+}
+
+@keyframes light {
+    0%{
+        border-radius: 45px 0px 10px 6px;
+    }
+    100%{
+        border-radius: 0px 45px 6px 10px;
+    }
+}
